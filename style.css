@@ -1,0 +1,279 @@
+/* quicksand-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quicksand-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* quicksand-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/quicksand-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* CSS variables for commonly used values */
+:root {
+  --color-primary-dark: #15243c;
+  --color-primary-light: #ebf5ff;
+  --color-secondary-dark: #3b64a5;
+  --color-secondary-light: #ebf5ff;
+  --color-accent: #fOb914;
+
+  --header-font-size: clamp(2rem, 4vw, 3rem);
+  --body-font-size: clamp(1rem, 2vw, 1.5rem);
+  --spacing-standard: 1.2rem;
+  --section-padding: clamp(3.75rem, 8vw, 6.25rem) 1rem;
+  --max-width-container: clamp(80rem, 75vw, 6.25rem);
+}
+
+/* Global settings  */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
+  min-height: 100vh;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
+}
+
+ul.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container settings */
+.header,
+.footer,
+.hero {
+  background: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+.hero, 
+/* .info, */
+.quote,
+.cta,
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Specific section styling */
+
+/* header */
+.header {
+  padding: var(--spacing-standard) 0;
+}
+
+.header .logo {
+  color: var(--color-text-light);
+  font-size: var(--spacing-standard);
+  font-weight: 700;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-standard);
+}
+
+/* header & hero */
+.header a,
+.hero .text {
+  font-size: 18px;
+  color: var(--color-text-light);
+}
+
+/* hero */
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.hero .heading h1 {
+  font-size: 48px;
+  padding: 0px;
+}
+
+.hero .content {
+  width: 500px;
+}
+
+button {
+  color: var(--color-text-light);
+  font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
+  font-size: var(--spacing-standard);
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-secondary);
+  padding: 12px 32px;
+}
+
+/* info */
+.title {
+  color: var(--color-text-dark);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.item {
+  max-width: 200px;
+}
+
+.item svg {
+  color: var(--color-secondary);
+}
+
+.item .text {
+  padding: 16px 0;
+  text-align: center;
+}
+
+/* quote */
+.quote {
+  background: var(--color-text-light);
+}
+
+.quote .text {
+  color: var(--color-text-dark);
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 60px 0;
+}
+
+.quote cite {
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+  padding: 10px 0;
+}
+
+/* cta */
+.cta .container {
+  color: var(--color-text-light);
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  height: 150px;
+  width: calc(100% + 128px); /* Account for wider blue box */
+  margin: 100px 0;
+  padding: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta h2 {
+  font-size: 2em;
+  margin: 5px 0;
+}
+
+.cta button {
+  border: 3px solid var(--color-button);
+  border-radius: 8px;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
