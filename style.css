@@ -21,7 +21,7 @@
   --color-primary-light: #ebf5ff;
   --color-secondary-dark: #3b64a5;
   --color-secondary-light: #ebf5ff;
-  --color-accent: #fOb914;
+  --color-accent: #f0b914;
 
   --header-font-size: clamp(2rem, 4vw, 3rem);
   --body-font-size: clamp(1rem, 2vw, 1.5rem);
@@ -114,8 +114,8 @@ ul.nav {
 .header,
 .footer,
 .hero {
-  background: var(--color-primary);
-  color: var(--color-text-light);
+  background: var(--color-primary-dark);
+  color: var(--color-primary-light);
 }
 
 .hero, 
@@ -141,7 +141,7 @@ ul.nav {
 }
 
 .header .logo {
-  color: var(--color-text-light);
+  color: var(--color-primary-light);
   font-size: var(--spacing-standard);
   font-weight: 700;
 }
@@ -166,7 +166,7 @@ ul.nav {
 .header a,
 .hero .text {
   font-size: 18px;
-  color: var(--color-text-light);
+  color: var(--color-primary-light);
 }
 
 /* hero */
@@ -187,19 +187,20 @@ ul.nav {
 }
 
 button {
-  color: var(--color-text-light);
+  color: var(--color-primary-light);
   font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
   font-size: var(--spacing-standard);
   font-weight: 700;
+  padding: 12px 32px;
   border: none;
   border-radius: 8px;
   background: var(--color-secondary);
-  padding: 12px 32px;
+  border: 3px solid var(--color-accent);
 }
 
 /* info */
 .title {
-  color: var(--color-text-dark);
+  color: var(--color-primary-dark);
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -227,11 +228,11 @@ button {
 
 /* quote */
 .quote {
-  background: var(--color-text-light);
+  background: var(--color-primary-light);
 }
 
 .quote .text {
-  color: var(--color-text-dark);
+  color: var(--color-primary-dark);
   font-size: 36px;
   font-style: italic;
   font-weight: 700;
@@ -249,8 +250,8 @@ button {
 
 /* cta */
 .cta .container {
-  color: var(--color-text-light);
-  background-color: var(--color-secondary);
+  color: var(--color-primary-light);
+  background-color: var(--color-secondary-dark);
   border-radius: 8px;
   height: 150px;
   width: calc(100% + 128px); /* Account for wider blue box */
@@ -264,11 +265,6 @@ button {
 .cta h2 {
   font-size: 2em;
   margin: 5px 0;
-}
-
-.cta button {
-  border: 3px solid var(--color-button);
-  border-radius: 8px;
 }
 
 /* footer */
