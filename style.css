@@ -82,7 +82,7 @@ p {
 }
 
 body {
-  font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
+  font-family: Quicksand, Tahoma, sans-serif, -apple-system;
   min-height: 100vh;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +97,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
-  font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
+  /* font-family: -apple-system, Quicksand, Tahoma, sans-serif; */
 }
 
 ul.nav {
