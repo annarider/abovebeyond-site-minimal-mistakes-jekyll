@@ -178,7 +178,7 @@ button:focus {
 
 .header .logo {
   color: var(--color-primary-light);
-  font-size: var(--spacing-standard);
+  font-size: var(--header-font-size);
   font-weight: 700;
 }
 
