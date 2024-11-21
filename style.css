@@ -195,7 +195,7 @@ button:focus {
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--spacing-standard);
+  gap: var(--space-md);
 }
 
 /* header & hero */
