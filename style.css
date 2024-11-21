@@ -201,7 +201,7 @@ button:focus {
 /* header & hero */
 .header a,
 .hero .text {
-  font-size: 18px;
+  font-size: var(--body-font-size);
   color: var(--color-primary-light);
 }
 
