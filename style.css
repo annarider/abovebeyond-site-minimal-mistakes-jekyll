@@ -229,7 +229,7 @@ button:focus {
 .cards {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: var(--header-font-size);
 }
 
 .item {
