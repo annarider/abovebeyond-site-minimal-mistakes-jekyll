@@ -152,6 +152,7 @@ button:focus {
   max-width: var(--max-width-container);
   width: 100%;
   margin: 0 auto;
+  padding: var(--section-padding);
 }
 
 .header,
@@ -210,11 +211,11 @@ button:focus {
 .hero .container {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
+  padding: var(--section-padding);
 }
 
 .hero .heading h1 {
-  font-size: 48px;
+  font-size: var(--header-font-size);
   padding: 0px;
 }
 
@@ -225,10 +226,10 @@ button:focus {
 /* info */
 .title {
   color: var(--color-primary-dark);
-  font-size: 36px;
+  font-size: var(--header-font-size);
   font-weight: 700;
   text-align: center;
-  padding: 15px 0;
+  padding: var(--space-sm) 0;
 }
 
 .cards {
