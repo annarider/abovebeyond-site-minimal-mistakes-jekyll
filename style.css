@@ -32,6 +32,7 @@
   --body-font-size: clamp(1rem, 2vw, 1.5rem);
 
   /* spacing system */
+  /* (60px - 100px) top & bottom 16px left & right */
   --section-padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   --space-xs: clamp(0.5rem, 2vw, 1rem); /* 8px - 16px */
   --space-sm: clamp(1rem, 2vw, 1.5rem); /* 16px - 24px */
@@ -121,7 +122,7 @@ button {
   font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
   font-size: var(--spacing-standard);
   font-weight: 700;
-  padding: 12px 32px;
+  padding: var(--space-xs) var(--space-md);
   background: var(--color-secondary);
   border: 3px solid var(--color-accent);
   border-radius: 8px;
@@ -147,6 +148,12 @@ button:focus {
 }
 
 /* Container settings */
+.container {
+  max-width: var(--max-width-container);
+  width: 100%;
+  margin: 0 auto;
+}
+
 .header,
 .footer,
 .hero {
@@ -161,12 +168,6 @@ button:focus {
 .footer {
   display: flex;
   justify-content: center;
-}
-
-.container {
-  max-width: var(--max-width-container);
-  width: 100%;
-  margin: 0 auto;
 }
 
 /* Specific section styling */
