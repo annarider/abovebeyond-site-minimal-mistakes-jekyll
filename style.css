@@ -82,7 +82,8 @@ p {
 }
 
 body {
-  font-family: Quicksand, Tahoma, sans-serif, -apple-system;
+  font-family: Quicksand, Tahoma, sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont;
   min-height: 100vh;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +98,6 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
-  /* font-family: -apple-system, Quicksand, Tahoma, sans-serif; */
 }
 
 ul.nav {
@@ -105,6 +105,31 @@ ul.nav {
   padding: 0;
 }
 
+button {
+  color: var(--color-primary-light);
+  font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
+  font-size: var(--spacing-standard);
+  font-weight: 700;
+  padding: 12px 32px;
+  background: var(--color-secondary);
+  border: 3px solid var(--color-accent);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-secondary-dark);
+  outline-offset: 3px;
+}
+
+/* Consider adding reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
+}
 .responsive-image {
   max-width: 100%;
   height: auto;
@@ -184,18 +209,6 @@ ul.nav {
 
 .hero .content {
   width: 500px;
-}
-
-button {
-  color: var(--color-primary-light);
-  font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
-  font-size: var(--spacing-standard);
-  font-weight: 700;
-  padding: 12px 32px;
-  border: none;
-  border-radius: 8px;
-  background: var(--color-secondary);
-  border: 3px solid var(--color-accent);
 }
 
 /* info */
