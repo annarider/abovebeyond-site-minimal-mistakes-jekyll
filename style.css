@@ -173,7 +173,7 @@ button:focus {
 
 /* header */
 .header {
-  padding: var(--spacing-standard) 0;
+  padding: var(--space-sm) 0;
 }
 
 .header .logo {
