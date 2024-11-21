@@ -292,5 +292,5 @@ button:focus {
 .footer {
   display: flex;
   align-items: center;
-  min-height: 100px;
+  min-height: var(--space-xl);
 }
