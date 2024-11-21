@@ -173,10 +173,6 @@ button:focus {
 /* Specific section styling */
 
 /* header */
-.header {
-  padding: var(--space-sm) 0;
-}
-
 .header .logo {
   color: var(--color-primary-light);
   font-size: var(--header-font-size);
@@ -207,11 +203,9 @@ button:focus {
 }
 
 /* hero */
-
 .hero .container {
   display: flex;
   justify-content: space-between;
-  padding: var(--section-padding);
 }
 
 .hero .heading h1 {
