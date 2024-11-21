@@ -23,11 +23,22 @@
   --color-secondary-light: #ebf5ff;
   --color-accent: #f0b914;
 
+  /* typography scale */
+  /* 60px - 100px top and bottom 
+   * Ryan's CodeStitch variables: 
+   * https://codestitch.app/documentation
+   */
   --header-font-size: clamp(2rem, 4vw, 3rem);
   --body-font-size: clamp(1rem, 2vw, 1.5rem);
-  --spacing-standard: 1.2rem;
-  --section-padding: clamp(3.75rem, 8vw, 6.25rem) 1rem;
-  --max-width-container: clamp(80rem, 75vw, 6.25rem);
+
+  /* spacing system */
+  --section-padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  --space-xs: clamp(0.5rem, 2vw, 1rem); /* 8px - 16px */
+  --space-sm: clamp(1rem, 2vw, 1.5rem); /* 16px - 24px */
+  --space-md: clamp(1.5rem, 2vw, 2rem); /* 24px - 32px */
+  --space-lg: clamp(2rem, 5vw, 4rem); /* 32px - 64px */
+  --space-xl: clamp(4rem, 2vw, 6rem); /* 64px - 96px */
+  --max-width-container: clamp(62.5rem, 75vw, 80rem); /* 1000px - 1280px */
 }
 
 /* Global settings  */
