@@ -242,7 +242,7 @@ button:focus {
 }
 
 .item .text {
-  padding: 16px 0;
+  padding: var(--space-sm) 0;
   text-align: center;
 }
 
