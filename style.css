@@ -273,12 +273,11 @@ button:focus {
 /* cta */
 .cta .container {
   color: var(--color-primary-light);
+  height: var(--space-xxl);
+  margin: var(--space-xl) 0;
+  /* padding: 0 var(--space-lg); */
   background-color: var(--color-secondary-dark);
   border-radius: 8px;
-  height: var(--space-xxl);
-  width: calc(100% + var(--space-xxl)); /* Account for wider blue box */
-  margin: var(--space-xl) 0;
-  padding: 0 var(--space-lg);
   display: flex;
   justify-content: space-between;
   align-items: center;
