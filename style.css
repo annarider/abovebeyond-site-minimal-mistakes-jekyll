@@ -39,6 +39,7 @@
   --space-md: clamp(1.5rem, 2vw, 2rem); /* 24px - 32px */
   --space-lg: clamp(2rem, 5vw, 4rem); /* 32px - 64px */
   --space-xl: clamp(4rem, 2vw, 6rem); /* 64px - 96px */
+  --space-xxl: clamp(10rem, 5vw, 12.5rem); /* 160px - 200px */
   --max-width-container: clamp(62.5rem, 75vw, 80rem); /* 1000px - 1280px */
 }
 
@@ -233,7 +234,7 @@ button:focus {
 }
 
 .item {
-  max-width: 200px;
+  max-width: var(--space-xxl);
 }
 
 .item svg {
