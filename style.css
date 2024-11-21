@@ -34,6 +34,7 @@
 
   /* spacing system */
   /* (28px - 48px) top & bottom 16px left & right */
+  --padding-block: clamp(3rem, 5vw, 4rem); /* 100px - 120px */
   --section-padding: clamp(1.75rem, 7.82vw, 3rem) 1rem;
   --space-xs: clamp(0.5rem, 2vw, 1rem); /* 8px - 16px */
   --space-sm: clamp(1rem, 2vw, 1.5rem); /* 16px - 24px */
@@ -151,10 +152,10 @@ button:focus {
 
 /* Container settings */
 .container {
-  max-width: var(--max-width-container);
-  width: 100%;
-  margin: 0 auto;
-  padding: var(--section-padding);
+  width: min(100% - var(--space-lg, 2rem), var(--max-width-container));
+  margin-inline: auto;
+  padding-inline: var(--space-md, 2rem);
+  padding-block: var(--padding-block, 6rem);
 }
 
 .header,
