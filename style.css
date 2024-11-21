@@ -274,18 +274,18 @@ button:focus {
   color: var(--color-primary-light);
   background-color: var(--color-secondary-dark);
   border-radius: 8px;
-  height: 150px;
-  width: calc(100% + 128px); /* Account for wider blue box */
-  margin: 100px 0;
-  padding: 0 64px;
+  height: var(--space-xxl);
+  width: calc(100% + var(--space-xxl)); /* Account for wider blue box */
+  margin: var(--space-xl) 0;
+  padding: 0 var(--space-lg);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .cta h2 {
-  font-size: 2em;
-  margin: 5px 0;
+  font-size: var(--quote-font-size);
+  margin: 0;
 }
 
 /* footer */
