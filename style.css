@@ -161,8 +161,7 @@ button:focus {
   color: var(--color-primary-light);
 }
 
-.hero, 
-/* .info, */
+.hero,
 .quote,
 .cta,
 .footer {
