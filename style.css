@@ -179,6 +179,10 @@ button:focus {
 /* Specific section styling */
 
 /* header */
+.header .container {
+  padding-block: var(--space-md, 1.5rem); /* Overwrite .container padding */
+}
+
 .header .logo {
   color: var(--color-primary-light);
   font-size: var(--header-font-size);
@@ -212,7 +216,8 @@ button:focus {
 .hero .container {
   display: flex;
   justify-content: space-between;
-  gap: var(--space-lg, 2.5rem);
+  align-items: center;
+  gap: var(--space-md, 1.5rem);
 }
 
 .hero .heading h1 {
@@ -221,8 +226,13 @@ button:focus {
 }
 
 .hero-content {
-  max-width: var(--max-mobile-width, 22.5rem);
+  max-width: 45%; /* Widens text, while leaving room for image */
   flex-shrink: 0;
+}
+
+.hero-img {
+  max-width: 45%; /* Maintain proportion with text */
+  flex-shrink: 1; /* Allows image to shrink if needed */
 }
 
 /* Mobile support */
