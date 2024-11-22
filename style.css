@@ -311,7 +311,7 @@ button:focus {
   color: var(--color-primary-light);
   height: var(--space-xxl);
   margin: var(--space-xl) 0;
-  /* padding: 0 var(--space-lg); */
+  padding: 0 var(--space-lg);
   background-color: var(--color-secondary-dark);
   border-radius: 8px;
   display: flex;
@@ -322,6 +322,22 @@ button:focus {
 .cta h2 {
   font-size: var(--quote-font-size);
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cta .container {
+    text-align: center;
+    padding-bottom: var(--space-lg, 3rem);
+    flex-direction: column;
+  }
+
+  .cta-heading {
+    padding-top: var(--space-xs, 1rem);
+  }
+
+  .cta-button {
+    max-width: var(--max-mobile-width);
+  }
 }
 
 /* footer */
