@@ -232,7 +232,7 @@ button:focus {
     flex-direction: column;
     align-items: center; /* Center items when stacked */
   }
-  
+
   .hero-content {
     width: 100%;
     max-width: 100%; /* Allow full width on mobile */
@@ -242,6 +242,7 @@ button:focus {
     width: 100%;
     max-width: var(--max-mobile-width, 25rem); /* Limit image size on mobile */
   }
+}
 
 /* info */
 .title {
@@ -269,6 +270,18 @@ button:focus {
 .item .text {
   padding: var(--space-sm) 0;
   text-align: center;
+}
+
+/* Mobile styles remain the same */
+@media (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    width: calc(50% - 20px);
+  }
 }
 
 /* quote */
