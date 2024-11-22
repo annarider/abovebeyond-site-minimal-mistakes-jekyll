@@ -125,6 +125,7 @@ button {
   font-family: -apple-system, "Quicksand", Tahoma, sans-serif;
   font-size: var(--spacing-standard);
   font-weight: 700;
+  margin: var(--space-xs) 0;
   padding: var(--space-xs) var(--space-md);
   background: var(--color-secondary);
   border: 3px solid var(--color-accent);
