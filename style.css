@@ -28,9 +28,9 @@
    * Ryan's CodeStitch variables: 
    * https://codestitch.app/documentation
    */
-  --header-font-size: clamp(2rem, 4vw, 3rem);
-  --body-font-size: clamp(1rem, 2vw, 1.5rem);
-  --quote-font-size: clamp(1.5rem, 2vw, 2rem);
+  --header-font-size: clamp(2rem, 2vw, 3rem);
+  --body-font-size: clamp(1rem, 1.5rem, 1.5rem);
+  --quote-font-size: clamp(1.5rem, 1.75vw, 2rem);
 
   /* spacing system */
   /* (28px - 48px) top & bottom 16px left & right */
@@ -44,7 +44,7 @@
   --space-xxl: clamp(10rem, 5vw, 12.5rem); /* 160px - 200px */
   --space-xxxl: clamp(12.5rem, 5vw, 22.5rem); /* 200px - 360px */
   --max-mobile-width: clamp(22.5rem, 5vw, 28rem); /* 360px - 448px */
-  --max-width-container: clamp(62.5rem, 75vw, 80rem); /* 1000px - 1280px */
+  --max-width-container: clamp(62.5rem, 70vw, 80rem); /* 1000px - 1280px */
 }
 
 /* Global settings  */
