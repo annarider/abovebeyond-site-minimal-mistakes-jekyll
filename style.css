@@ -42,6 +42,8 @@
   --space-lg: clamp(2rem, 5vw, 4rem); /* 32px - 64px */
   --space-xl: clamp(4rem, 2vw, 6rem); /* 64px - 96px */
   --space-xxl: clamp(10rem, 5vw, 12.5rem); /* 160px - 200px */
+  --space-xxxl: clamp(12.5rem, 5vw, 22.5rem); /* 200px - 360px */
+  --max-mobile-width: clamp(22.5rem, 5vw, 28rem); /* 360px - 448px */
   --max-width-container: clamp(62.5rem, 75vw, 80rem); /* 1000px - 1280px */
 }
 
@@ -210,6 +212,7 @@ button:focus {
 .hero .container {
   display: flex;
   justify-content: space-between;
+  gap: var(--space-lg, 2.5rem);
 }
 
 .hero .heading h1 {
@@ -218,8 +221,27 @@ button:focus {
 }
 
 .hero-content {
-  width: 500px;
+  max-width: var(--max-mobile-width, 22.5rem);
+  flex-shrink: 0;
 }
+
+/* Mobile support */
+@media (max-width: 768px) {
+  .hero .container {
+    padding: var(--space-md, 2.5rem) var(--space-md, 1.5rem);
+    flex-direction: column;
+    align-items: center; /* Center items when stacked */
+  }
+  
+  .hero-content {
+    width: 100%;
+    max-width: 100%; /* Allow full width on mobile */
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: var(--max-mobile-width, 25rem); /* Limit image size on mobile */
+  }
 
 /* info */
 .title {
