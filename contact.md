@@ -2,6 +2,7 @@
 layout: single
 permalink: /contact/
 title: "Get answers quickly"
+classes: page-centered
 header:
   overlay_color: "#15243C"
   overlay_image: /assets/images/splash-contact.svg

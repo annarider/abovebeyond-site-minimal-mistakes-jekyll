@@ -36,6 +36,21 @@ $active-color: mix(#fff, $primary-color, 80%) !default;
   max-width: 100% !important;
 }
 
+/* Center and widen content pages */
+.page-centered {
+  .page {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .page__inner-wrap {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 

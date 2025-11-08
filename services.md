@@ -2,6 +2,7 @@
 layout: single
 permalink: /services/
 title: "What we offer"
+classes: page-centered
 header:
   overlay_color: "#15243C"
   overlay_image: /assets/images/splash-services.svg
