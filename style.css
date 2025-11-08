@@ -232,7 +232,7 @@ button:focus {
 
 .hero-img {
   max-width: 45%; /* Maintain proportion with text */
-  flex-shrink: 1; /* Allows image to shrink if needed */
+  flex-shrink: 1; /* Allows image to shrink if neededgit  */
 }
 
 /* Mobile support */

@@ -2,6 +2,7 @@
 layout: single
 permalink: /about/
 title: "About Us"
+classes: wide
 header:
   overlay_color: "#15243C"
   overlay_image: /assets/images/splash-about.svg
